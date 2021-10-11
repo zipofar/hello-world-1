@@ -18,7 +18,7 @@ services:
       SIDEKIQ_LOGIN: ''
       SIDEKIQ_PASSWORD: ''
       RUBYOPT: -W:no-deprecated -W:no-experimental
-      CDN_HOST: https://cdn.cloud
+      CDN_HOST: https://cdn.cloud?k=1
 
 ingress:
   service: hello-world

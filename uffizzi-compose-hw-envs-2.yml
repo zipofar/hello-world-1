@@ -11,9 +11,9 @@ services:
         -----END RSA PRIVATE KEY-----
       SECRET: 'secret'
       RAILS_WORKERS_COUNT: 0
-      RAILS_ENV: development
+      RAILS_ENV: ${HW_TEST.RAILS_ENV}
       APP_URL: 'http://lvh.me:7000'
-      APP_LOGIN: ''
+      APP_LOGIN: ${HW_TEST.NAME}
       APP_PASSWORD: ''
       SIDEKIQ_LOGIN: ''
       SIDEKIQ_PASSWORD: ''

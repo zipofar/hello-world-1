@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile.args
       args:
         - IMAGE_PATH=images
-        - TEST_ARG="Hello from compose"
+        - TEST_ARG=Hello from compose
 
 ingress:
   service: hello-world

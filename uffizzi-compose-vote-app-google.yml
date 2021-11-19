@@ -3,7 +3,7 @@ services:
     image: redis:latest
 
   postgres:
-    image: postgres:9.6
+    image: postgres:latest
     environment:
       POSTGRES_USER: ${VOTE_APP_POSTGRES.USER}
       POSTGRES_PASSWORD: ${VOTE_APP_POSTGRES.PASSWORD}
@@ -32,9 +32,9 @@ ingress:
   port: 8080
 
 continuous_preview:
-  deploy_preview_when_pull_request_is_opened: false
-  delete_preview_when_pull_request_is_closed: false
-  delete_preview_after: 10h
-  share_to_github: false
-  deploy_preview_when_image_tag_is_created: false
-  delete_preview_when_image_tag_is_updated: false
+  deploy_preview_when_pull_request_is_opened: true
+  delete_preview_when_pull_request_is_closed: true
+  delete_preview_after: 9h
+  share_to_github: true
+  deploy_preview_when_image_tag_is_created: true
+  delete_preview_when_image_tag_is_updated: true

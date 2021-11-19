@@ -3,7 +3,7 @@ services:
     image: redis:latest
 
   postgres:
-    image: postgres:latest
+    image: postgres:9.6
     environment:
       POSTGRES_USER: ${VOTE_APP_POSTGRES.USER}
       POSTGRES_PASSWORD: ${VOTE_APP_POSTGRES.PASSWORD}

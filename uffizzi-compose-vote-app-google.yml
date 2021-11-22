@@ -5,8 +5,8 @@ services:
   postgres:
     image: postgres:9.6
     environment:
-      POSTGRES_USER: ${USER}
-      POSTGRES_PASSWORD: ${PASSWORD}
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
 
   nginx:
     image: nginx:latest

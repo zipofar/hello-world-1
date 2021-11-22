@@ -4,12 +4,12 @@ services:
 
   postgres:
     image: postgres:9.6
-    env_file: ${VOTE_APP_POSTGRES_ENVS}
+    env_file: .env
 
   nginx:
     image: nginx:latest
     configs:
-      - source: vote.conf
+      - source: ./configs/vote.conf
         target: /etc/nginx/conf.d
 
   worker:

@@ -27,11 +27,11 @@ services:
   result:
     image: gcr.io/uffizzi-pro-qa-gke/example-result:latest
 
-ingress1:
+ingress:
   service: nginx
   port: 8080
 
-continuous_preview:
+continuous_preview1:
   deploy_preview_when_pull_request_is_opened: false
   delete_preview_when_pull_request_is_closed: true
   delete_preview_after: 19h

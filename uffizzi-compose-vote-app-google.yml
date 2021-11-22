@@ -1,4 +1,4 @@
-servicesss:
+services:
   redis:
     image: redis:latest
 
@@ -27,7 +27,7 @@ servicesss:
   result:
     image: gcr.io/uffizzi-pro-qa-gke/example-result:latest
 
-ingress:
+ingress1:
   service: nginx
   port: 8080
 

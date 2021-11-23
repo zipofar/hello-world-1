@@ -1,5 +1,4 @@
 version: "3.9"
-​
 services:
   postgres:
     image: postgres:13
@@ -12,7 +11,6 @@ services:
       interval: 5s
       retries: 5
     restart: always
-​
   airflow-webserver:
     image: "apache/airflow:2.2.2"
     environment:
@@ -49,7 +47,6 @@ services:
       - logs:/opt/airflow/logs
     depends_on:
       - airflow-scheduler
-​
   airflow-scheduler:
     image: "apache/airflow:2.2.2"
     environment:
@@ -88,10 +85,8 @@ services:
       - logs:/opt/airflow/logs
     depends_on:
       - postgres
-​
 volumes:
   logs:
-​
 ingress:
   service: airflow-webserver
   port: 8080

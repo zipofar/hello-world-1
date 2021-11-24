@@ -3,7 +3,7 @@ services:
     image: redis:latest
 
   postgres:
-    image: postgres:latest
+    image: postgres:9.6
     environment:
       POSTGRES_USER: ${USER}
       POSTGRES_PASSWORD: ${PASSWORD}

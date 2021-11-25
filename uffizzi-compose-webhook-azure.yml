@@ -1,0 +1,15 @@
+services:
+  webhook:
+    image: uffizziqa.azurecr.io/webhooks-test-app:latest
+
+ingress:
+  service: webhook
+  port: 80
+
+continuous_preview:
+  deploy_preview_when_pull_request_is_opened: false
+  delete_preview_when_pull_request_is_closed: false
+  delete_preview_after: 720h
+  share_to_github: false
+  deploy_preview_when_image_tag_is_created: true
+  delete_preview_when_image_tag_is_updated: true

@@ -4,14 +4,12 @@ services:
 
   postgres:
     image: postgres:9.6
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+    env_file: .env
 
   nginx:
     image: nginx:latest
     configs:
-      - source: vote.conf
+      - source: ./configs/vote.conf
         target: /etc/nginx/conf.d
 
   worker:

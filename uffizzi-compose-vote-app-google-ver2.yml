@@ -16,7 +16,7 @@ services:
     configs:
       - source: ./config2/vote.conf
         target: /etc/nginx/conf.d
-      - source: ./config/vote.conf
+      - source: ./configs/vote.conf
         target: /etc/nginx/conf.d
 
   worker:

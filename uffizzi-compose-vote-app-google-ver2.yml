@@ -7,15 +7,10 @@ services:
     env_file: 
     - ./envs/env1.yml
     - ./envs/env2.yml
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
 
   nginx:
     image: nginx:latest
     configs:
-      - source: ./config2/vote.conf
-        target: /etc/nginx/conf.d
       - source: ./configs/vote.conf
         target: /etc/nginx/conf.d
 

@@ -1,6 +1,6 @@
 services:
   webhook:
-    image: uffizzitest/webhooks-test-app:feature
+    image: uffizzitest/webhooks-test-app:latest
 
 ingress:
   service: webhook

@@ -7,7 +7,7 @@ ingress:
   port: 80
 
 continuous_preview:
-  tag_pattern: uffizzi_request_a.a/a-a_#*
+  tag_pattern: uffizzi_request_a.a/a-a_$*
   deploy_preview_when_pull_request_is_opened: false
   delete_preview_when_pull_request_is_closed: false
   delete_preview_after: 720h

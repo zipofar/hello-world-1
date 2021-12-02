@@ -1,4 +1,4 @@
-services:
+servicess:
   webhook:
     image: uffizzitest/webhooks-test-app:latest
     environment:

@@ -1,2 +1,2 @@
 POSTGRES_USER: postgres
-TEST: env1
+TEST1: env1

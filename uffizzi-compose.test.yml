@@ -15,7 +15,7 @@ services:
   nginx:
     image: nginx:latest
     configs:
-      - source: vote.conf
+      - source: ./configs/vote.conf
         target: /etc/nginx/conf.d
 
   worker:

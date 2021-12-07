@@ -13,6 +13,8 @@ services:
     configs:
       - source: ./configs/vote.conf
         target: /etc/nginx/conf.d
+    entrypoint: /usr/sbin/nginx-debug
+    command: "-g", "daemon off;"
 
   worker:
     image: uffizzicloud/example-worker:latest

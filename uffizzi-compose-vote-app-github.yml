@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      TEST: test
+      TEST: test123
 
   nginx:
     image: nginx:latest

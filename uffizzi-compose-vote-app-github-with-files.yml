@@ -11,7 +11,7 @@ services:
   nginx:
     image: nginx:latest
     configs:
-      - source: ./config2/vote.conf
+      - source: ./config3/vote.conf
         target: /etc/nginx/conf.d
       - source: ./configs/vote.conf
         target: /etc/nginx/conf.d

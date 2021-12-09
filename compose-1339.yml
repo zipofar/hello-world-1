@@ -1,5 +1,5 @@
 services:
-  on:
+  'on':
     image: nginx:latest
 
 ingress:

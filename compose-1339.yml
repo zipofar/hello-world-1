@@ -1,7 +1,7 @@
 services:
-  test:
+  on:
     image: nginx:latest
 
 ingress:
-  service: test
+  service: 'on'
   port: 8080

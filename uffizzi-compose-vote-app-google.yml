@@ -15,7 +15,7 @@ services:
         target: /etc/nginx/conf.d
 
   worker:
-    image: gcr.io/uffizzi-pro-qa-gke/example-worker:latest
+    image: gcr.io/uffizzi-pro-qa-gke/example-worker:feature
     deploy:
       resources:
         limits:

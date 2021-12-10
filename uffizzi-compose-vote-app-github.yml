@@ -10,14 +10,14 @@ services:
       TEST: test1
 
   nginx:
-    image: nginx:feature
+    image: nginx
     configs:
       - source: /configs/vote.conf
         target: /etc/nginx/conf.d
 
   worker:
     build:
-      context: https://github.com/NealArw/example-voting-worker:main
+      context: https://github.com/NealArw/example-voting-worker
       dockerfile: Dockerfile
     deploy:
       resources:

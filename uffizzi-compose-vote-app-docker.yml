@@ -19,7 +19,7 @@ services:
       - "daemon off;"
 
   worker:
-    image: uffizzicloud/example-worker:feature
+    image: uffizzicloud/example-worker:latest
     deploy:
       resources:
         limits:

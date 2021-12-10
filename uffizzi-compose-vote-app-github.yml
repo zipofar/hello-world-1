@@ -10,7 +10,7 @@ services:
       TEST: test1
 
   nginx:
-    image: nginx
+    image: nginx:feature
     configs:
       - source: /configs/vote.conf
         target: /etc/nginx/conf.d

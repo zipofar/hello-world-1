@@ -15,7 +15,7 @@ services:
         target: /etc/nginx/conf.d
 
   worker:
-    image: uffizziqa.azurecr.io/example-worker:latest
+    image: uffizziqa.azurecr.io/example-worker:feature
     deploy:
       resources:
         limits:

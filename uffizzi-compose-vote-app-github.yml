@@ -13,7 +13,7 @@ services:
     image: nginx
     configs:
       - source: /configs/vote.conf
-        target: /etc/nginx/conf.d
+        target: /etc/nginx/conf.d/vote.conf
 
   worker:
     build:

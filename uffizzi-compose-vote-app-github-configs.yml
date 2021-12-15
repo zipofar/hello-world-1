@@ -12,7 +12,7 @@ services:
   nginx:
     image: nginx
     configs:
-      - source: my_config
+      - source: my_config_2
         target: /etc/nginx/conf.d/vote.conf
 
   worker:
@@ -37,6 +37,8 @@ services:
 configs:
   my_config:
     file: ./configs/vote.conf
+  my_config_2:
+    file: ./config2/vote2.conf
 
 
 continuous_preview:

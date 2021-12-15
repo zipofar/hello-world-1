@@ -36,7 +36,7 @@ services:
       
 configs:
   my_config:
-    file: /configs/vote.conf
+    file: ./configs/vote.conf
 
 
 continuous_preview:

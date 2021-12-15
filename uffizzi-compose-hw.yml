@@ -1,7 +1,7 @@
 services:
   hello-world:
     build:
-      context: https://github.com/NealArw/hello-world-1#testing1:test-1345
+      context: https://github.com/NealArw/hello-world-11#testing:test-1345
 
 ingress:
   service: hello-world

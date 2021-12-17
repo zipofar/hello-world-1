@@ -11,8 +11,8 @@ services:
   nginx:
     image: nginx:latest
     configs:
-      - source: /configs/vote.conf
-        target: /etc/nginx/conf.d
+      - source: my_config_2
+        target: /etc/nginx/conf.d/default.conf
 
   worker:
     image: gcr.io/uffizzi-pro-qa-gke/example-worker:latest
@@ -26,6 +26,12 @@ services:
 
   result:
     image: gcr.io/uffizzi-pro-qa-gke/example-result:latest
+
+configs:
+  my_config:
+    file: ./configs/vote.conf
+  my_config_2:
+    file: ./config2/vote2.conf
 
 ingress:
   service: nginx

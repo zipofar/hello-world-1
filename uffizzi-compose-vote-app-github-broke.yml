@@ -11,9 +11,7 @@ services:
 
   nginx:
     image: nginx
-    configs:
-      - source: my_config_2
-        target: /etc/nginx/conf.d/default.conf
+
 
   worker:
     build:

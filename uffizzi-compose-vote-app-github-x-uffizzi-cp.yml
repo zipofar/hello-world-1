@@ -34,11 +34,13 @@ services:
       context: https://github.com/NealArw/example-voting-result#main
       dockerfile: Dockerfile
     x-uffizzi-continuous-preview:
-      deploy_preview_when_pull_request_is_opened: false
-      delete_preview_when_pull_request_is_closed: false
-      delete_preview_after: 220h
-      share_to_github: true
+      share_to_github: false
+      delete_preview_after: 99h
+      tag_pattern: test_*
+      deploy_preview_when_image_tag_is_updated: false
       deploy_preview_when_image_tag_is_created: false
+      delete_preview_when_pull_request_is_closed: false
+      deploy_preview_when_pull_request_is_opened: false
       
 configs:
   my_config:
@@ -48,11 +50,13 @@ configs:
 
 
 x-uffizzi-continuous-preview:
-  deploy_preview_when_pull_request_is_opened: true
-  delete_preview_when_pull_request_is_closed: true
-  delete_preview_after: 320h
-  share_to_github: false
+  share_to_github: true
+  delete_preview_after: 100h
+  tag_pattern: uffizzi_request_*
+  deploy_preview_when_image_tag_is_updated: true
   deploy_preview_when_image_tag_is_created: true
+  delete_preview_when_pull_request_is_closed: true
+  deploy_preview_when_pull_request_is_opened: true
 
 ingress:
   service: nginx

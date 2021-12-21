@@ -41,7 +41,7 @@ configs:
     file: ./config2/vote2.conf
 
 
-x-uffizzi-continuous_preview:
+x-uffizzi-continuous-preview:
   deploy_preview_when_pull_request_is_opened: true
   delete_preview_when_pull_request_is_closed: true
   delete_preview_after: 120h

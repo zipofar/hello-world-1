@@ -12,7 +12,7 @@ ingress:
   service: webhook
   port: 80
 
-x-uffizzi-continuous_preview:
+continuous_preview:
   share_to_github: false
   delete_preview_after: 110h
   tag_pattern: uffizzi_request_*

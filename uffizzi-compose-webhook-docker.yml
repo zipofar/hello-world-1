@@ -14,7 +14,7 @@ ingress:
 
 x-uffizzi-continuous-preview:
   share_to_github: false
-  delete_preview_after: 194h
+  delete_preview_after: 94h
   tag_pattern: uffizzi_request_*
   delete_preview_when_image_tag_is_updated: false
   deploy_preview_when_image_tag_is_created: false

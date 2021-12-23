@@ -37,7 +37,7 @@ services:
       share_to_github: false
       delete_preview_after: 99h
       tag_pattern: test_*
-      delete_preview_when_image_tag_is_updated: false
+      delete_preview_when_image_tag_is_updated: true
       deploy_preview_when_image_tag_is_created: false
       delete_preview_when_pull_request_is_closed: false
       deploy_preview_when_pull_request_is_opened: false

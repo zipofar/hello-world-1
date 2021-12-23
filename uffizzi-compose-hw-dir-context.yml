@@ -1,6 +1,6 @@
 services:
   hello-world:
-    build: test-1345
+    build: test-1346
 
 ingress:
   service: hello-world

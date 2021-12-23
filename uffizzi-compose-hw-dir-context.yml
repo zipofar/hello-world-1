@@ -1,6 +1,6 @@
 services:
   hello-world:
-    build: ./
+    build: /
 
 ingress:
   service: hello-world

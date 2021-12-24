@@ -1,7 +1,8 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-1
+      context: https://github.com/NealArw/hello-world-1#testin
+      dockerfile: Dockerfile
 
 ingress:
   service: hello-world

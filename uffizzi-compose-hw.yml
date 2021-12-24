@@ -6,4 +6,4 @@ services:
 
 ingress:
   service: hello-world
-  port: 8081
+  port: 80

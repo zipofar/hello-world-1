@@ -8,8 +8,7 @@ services:
     deploy:
       x-uffizzi-auto-deploy-updates: true
 
-x-uffizzi:
-  ingress:
+x-uffizzi-ingress:
     service: webhook
     port: 8088
 

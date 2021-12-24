@@ -49,9 +49,9 @@ configs:
     file: ./config2/vote2.conf
 
 
-x-uffizzi-continuous-preview:
+x-uffizzi-continuous_preview:
   share_to_github: true
-  delete_preview_after: 100h
+  delete_preview_after: 101h
   tag_pattern: uffizzi_request_*
   delete_preview_when_image_tag_is_updated: false
   deploy_preview_when_image_tag_is_created: true

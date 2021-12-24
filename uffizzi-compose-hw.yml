@@ -1,6 +1,7 @@
 services:
   hello-world:
-    build: https://github.com/NealArw/hello-world-1:master
+    build: 
+      context: https://github.com/NealArw/hello-world-1:main
 
 ingress:
   service: hello-world

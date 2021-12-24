@@ -8,9 +8,9 @@ services:
     deploy:
       x-uffizzi-auto-deploy-updates: true
 
-ingress:
+x-uffizzi-ingress:
     service: webhook
-    port: 8080
+    port: 80
 
 x-uffizzi-continuous-preview:
   share_to_github: true

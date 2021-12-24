@@ -1,6 +1,6 @@
 services:
   hello-world:
-    build: .
+    build: https://github.com/NealArw/hello-world-1:master
 
 ingress:
   service: hello-world

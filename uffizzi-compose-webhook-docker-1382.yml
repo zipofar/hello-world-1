@@ -12,7 +12,7 @@ x-uffizzi-ingress:
    service: webhook
    port: 80
 
-x-uffizzi-continuous_preview:
+x-uffizzi-continuous-preview:
    share_to_github: true
    delete_preview_after: 100h
    delete_preview_when_image_tag_is_updated: true

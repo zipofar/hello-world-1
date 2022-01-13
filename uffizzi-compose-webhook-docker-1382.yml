@@ -16,6 +16,6 @@ services:
       deploy_preview_when_pull_request_is_opened: true
 
 
-x-uffizzi-ingress:
+ingress:
    service: webhook
    port: 80

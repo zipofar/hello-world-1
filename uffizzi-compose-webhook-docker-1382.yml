@@ -7,7 +7,7 @@ services:
       TEST: test123
     deploy:
       x-uffizzi-auto-deploy-updates: true
-    x-uffizzi-continuous-previews:
+    continuous_previews:
       share_to_github: true
       delete_preview_after: 98h
       delete_preview_when_image_tag_is_updated: true

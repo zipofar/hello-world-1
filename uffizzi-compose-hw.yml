@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-1#testing
+      context: https://github.com/NealArw/hello-world-1#brach-for-del
       dockerfile: Dockerfile
 
 x-uffizzi-ingress:

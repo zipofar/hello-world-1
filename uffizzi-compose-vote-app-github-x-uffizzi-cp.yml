@@ -58,6 +58,6 @@ x-uffizzi-continuous-preview:
   delete_preview_when_pull_request_is_closed: true
   deploy_preview_when_pull_request_is_opened: true
 
-ingress:
+x-uffizzi-ingress:
   service: nginx
   port: 8080

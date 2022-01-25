@@ -6,11 +6,11 @@ services:
       POSTGRES_PASSWORD: postgres
       TEST: test1
 
-ingress:
+x-uffizzi-ingress:
   service: webhook
   port: 80
 
-continuous_preview:
+x-uffizzi-continuous-preview:
   share_to_github: true
   delete_preview_after: 99h
   tag_pattern: uffizzi_request_*

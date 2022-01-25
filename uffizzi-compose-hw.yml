@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-11
+      context: https://github.com/NealArw1/hello-world-1
       dockerfile: Dockerfile
     x-uffizzi-continuous-preview:
       share_to_github: false

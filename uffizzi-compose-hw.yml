@@ -1,4 +1,4 @@
-1services:
+services:
   hello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1#brach-for-del
@@ -12,6 +12,6 @@
       delete_preview_when_pull_request_is_closed: true
       deploy_preview_when_pull_request_is_opened: true
 
-x-uffizzi-ingress:
+ingress:
   service: hello-world
   port: 80

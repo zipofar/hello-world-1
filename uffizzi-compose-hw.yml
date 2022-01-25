@@ -3,7 +3,7 @@ services:
     build: 
       context: https://github.com/NealArw/hello-world-1
       dockerfile: Dockerfile
-    x-uffizzi-continuous_preview:
+    x-uffizzi-continuous-preview:
       share_to_github: false
       delete_preview_after: 100h
       delete_preview_when_image_tag_is_updated: false

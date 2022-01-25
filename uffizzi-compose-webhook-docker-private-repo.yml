@@ -1,4 +1,4 @@
-ser1vices:
+services:
   webhook:
     image: uffizzicloud/hello-world:latest
     environment:

@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-1#brach-for-del
+      context: https://github.com/NealArw/hello-world-1#brach-for-dell
       dockerfile: Dockerfile
     x-uffizzi-continuous-preview:
       share_to_github: true

@@ -2,7 +2,7 @@ services:
   hello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1#testing:test1345
-      dockerfile: Dockerfile
+      dockerfile: test1345/Dockerfile
       
 x-uffizzi:
   ingress:

@@ -9,7 +9,7 @@ x-uffizzi:
     service: hello-world
     port: 80
     
-  continuous-preview:
+  continuous_preview:
     share_to_github: true
     delete_preview_after: 96h
     delete_preview_when_image_tag_is_updated: true

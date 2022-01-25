@@ -48,6 +48,6 @@ configs:
   my_config_2:
     file: ./config2/vote2.conf
 
-ingress:
+x-uffizzi-ingress:
   service: nginx
   port: 8080

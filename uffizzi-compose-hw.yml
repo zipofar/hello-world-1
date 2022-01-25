@@ -3,7 +3,7 @@ services:
     build: 
       context: https://github.com/NealArw/hello-world-1#brach-for-del
       dockerfile: Dockerfile
-    x-uffizzi-continuous-preview:
+    continuous_preview:
       share_to_github: true
       delete_preview_after: 97h
       tag_pattern: test_*

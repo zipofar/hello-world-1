@@ -1,4 +1,4 @@
-1services:
+s1ervices:
   webhook:
     image: uffizzitest/test-private-repo:latest
     environment:

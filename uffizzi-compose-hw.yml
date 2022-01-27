@@ -1,8 +1,8 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-1#testing:test-1345
-      dockerfile: Dockerfile
+      context: https://github.com/NealArw/hello-world-1#testing
+      dockerfile: test-1345-prod/Dockerfile
     x-uffizzi-continuous-preview:
       share_to_github: false
       delete_preview_after: 100h

@@ -7,8 +7,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       TEST: test1
-    secrets:
-      - mysecret
+      POSTGRES_PASSWORD: postgres
 
   nginx:
     image: nginx

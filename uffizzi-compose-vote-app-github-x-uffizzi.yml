@@ -6,8 +6,9 @@ services:
     image: postgres:9.6
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
       TEST: test1
+    secrets:
+      - mysecret
 
   nginx:
     image: nginx
@@ -51,3 +52,8 @@ configs:
 x-uffizzi-ingress:
   service: nginx
   port: 8080
+  
+secrets:
+  mysecret:
+    external: true    
+    name: "POSTGRES_PASSWORD"

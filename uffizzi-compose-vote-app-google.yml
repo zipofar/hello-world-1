@@ -28,16 +28,14 @@ services:
     image: gcr.io/uffizzi-pro-qa-gke/example-result:latest
 
 configs:
-  my_config:
-    file: ./configs/vote.conf
   my_config_2:
     file: ./config2/vote2.conf
 
-ingress:
+x-uffizzi-ingress:
   service: nginx
   port: 8080
 
-continuous_preview:
+x-uffizzi-continuous_preview:
   deploy_preview_when_pull_request_is_opened: true
   delete_preview_when_pull_request_is_closed: true
   delete_preview_after: 20h

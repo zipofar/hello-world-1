@@ -14,7 +14,7 @@ services:
       - source: my_config_2
         target: /etc/nginx/conf.d/default.conf
     entrypoint: /usr/sbin/nginx-debug
-    command: ["-g", "daemon", "off;"]
+    command: ["-g", "daemon off;"]
 
   worker:
     image: uffizzicloud/example-worker:latest

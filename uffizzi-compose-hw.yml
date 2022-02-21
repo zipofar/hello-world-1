@@ -1,4 +1,4 @@
-1services:
+services:
   hello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1
@@ -6,7 +6,7 @@
       args:
         testarg: uffizzi_test
 
-x-uffizzi:
+
   ingress:
     service: hello-world
     port: 80

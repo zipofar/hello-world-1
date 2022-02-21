@@ -49,7 +49,7 @@ services:
 # Loadbalancer configuration
 configs:
   nginx-vote-conf:
-    1file: ./config2/vote2.conf
+    file: ./1config2/vote2.conf
     
 # Postgres credentials
 secrets:

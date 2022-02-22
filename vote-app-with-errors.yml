@@ -2,14 +2,14 @@
 x-uffizzi:
   ingress:
     service: loadbalancer
-    port: 8081
+    port: 8080
   continuous_preview:
     deploy_preview_when_pull_request_is_opened: true
     delete_preview_when_pull_request_is_closed: true
     share_to_github: true
 
 # Vote applicaiton
-services:
+se1rvices:
   redis:
     image: redis:latest
 

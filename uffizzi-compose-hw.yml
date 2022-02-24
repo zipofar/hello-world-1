@@ -1,7 +1,7 @@
-servic1es:
+services:
   hello-world:
     build: 
-      context: https://github.com/NealArw1/hello-world-1
+      context: https://github.com/NealArw1/hello-world-11
       dockerfile: /Dockerfile
       args:
         testarg: uffizzi_test

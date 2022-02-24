@@ -17,7 +17,7 @@ services:
 
   worker:
     build:
-      context: https://github.com/NealArw/example-voting-worker#main
+      context: ./example-voting-worker
       dockerfile: Dockerfile
     deploy:
       resources:

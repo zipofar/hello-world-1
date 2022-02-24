@@ -37,11 +37,11 @@ services:
 x-uffizzi-continuous_preview:
   deploy_preview_when_pull_request_is_opened: true
   delete_preview_when_pull_request_is_closed: true
-  share_to_github: false
+  share_to_github: true
 
 x-uffizzi-ingress:
   service: nginx
-  port: 8080
+  port: 8081
 
 configs:
   my_config_2:

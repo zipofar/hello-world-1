@@ -1,4 +1,4 @@
-se1rvices:
+services:
   redis:
     image: redis:latest
 
@@ -41,7 +41,7 @@ x-uffizzi-continuous-preview:
 
 x-uffizzi-ingress:
   service: nginx
-  port: 8081
+  port: 8080
   
   
 

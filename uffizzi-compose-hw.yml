@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: .
+      context: ./
       dockerfile: /Dockerfile
       args:
         testarg: uffizzi_test

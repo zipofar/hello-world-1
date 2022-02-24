@@ -1,4 +1,4 @@
-s1ervices:
+services:
   redis:
     image: redis:latest
 

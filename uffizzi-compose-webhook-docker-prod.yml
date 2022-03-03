@@ -9,7 +9,7 @@ services:
       - pg_user
       - pg_password
 
-1x-uffizzi-ingress:
+x-uffizzi-ingress:
   service: webhook
   port: 80
 

@@ -1,4 +1,4 @@
-s1ervices:
+services:
   webhook:
     image: uffizzitest/webhooks-test-app:latest
     environment:
@@ -9,7 +9,7 @@ s1ervices:
       - pg_user
       - pg_password
 
-x-uffizzi-ingress:
+1x-uffizzi-ingress:
   service: webhook
   port: 80
 

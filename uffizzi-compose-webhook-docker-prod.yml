@@ -1,10 +1,13 @@
-services:
+s1ervices:
   webhook:
     image: uffizzitest/webhooks-test-app:latest
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       TEST: test1
+    secrets:
+      - pg_user
+      - pg_password
 
 x-uffizzi-ingress:
   service: webhook

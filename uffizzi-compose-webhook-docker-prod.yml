@@ -22,9 +22,10 @@ x-uffizzi-continuous-preview:
   delete_preview_when_pull_request_is_closed: true
   deploy_preview_when_pull_request_is_opened: true
 
-pg_user:
-  external: true               # indicates value is external to this repository
-  name: "POSTGRES_USER"        # i.e., value should be added in the Uffizzi Dashboard
-pg_password:
-  external: true               # indicates value is external to this repository
-  name: "POSTGRES_PASSWORD"    # i.e., value should be added in the Uffizzi Dashboard
+secrets:
+  pg_user:
+    external: true               # indicates value is external to this repository
+    name: "POSTGRES_USER"        # i.e., value should be added in the Uffizzi Dashboard
+  pg_password:
+    external: true               # indicates value is external to this repository
+    name: "POSTGRES_PASSWORD"    # i.e., value should be added in the Uffizzi Dashboard

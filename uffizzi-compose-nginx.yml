@@ -3,5 +3,6 @@ services:
     image: nginx:latest
 
 x-uffizzi:
-  service: nginx
-  port: 80
+  ingress:
+    service: nginx
+    port: 80

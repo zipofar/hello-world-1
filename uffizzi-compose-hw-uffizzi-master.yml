@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/dbp-terraform2/uffizzi#main
+      context: https://github.com/zipofar/hello-world-1#compose-test
       dockerfile: /Dockerfile
 
 x-uffizzi:

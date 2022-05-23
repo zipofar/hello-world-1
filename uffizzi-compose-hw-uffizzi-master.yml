@@ -4,7 +4,8 @@ services:
       context: https://github.com/dbp-terraform2/uffizzi#main
       dockerfile: /Dockerfile
 
-ingress:
+x-uffizzi:
+  ingress:
     service: hello-world
     port: 80
     

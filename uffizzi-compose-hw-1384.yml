@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/zipofar/hello-world-1#undefined
+      context: https://github.com/zipofar/hello-world-1
       dockerfile: /Dockerfile
       args:
         testarg: uffizzi_test

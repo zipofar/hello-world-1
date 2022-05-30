@@ -6,9 +6,9 @@ services:
       args:
         testarg: uffizzi_test
 
-x-uffizzi3:
-  ingress3:
-    service: hello-world3
+x-uffizzi:
+  ingress:
+    service: hello-world
     port: 80
     
   continuous_preview:

@@ -1,10 +1,8 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/zipofar/hello-world-1#master-1384-hm
+      context: https://github.com/zipofar/hello-world-1#master-1384
       dockerfile: /Dockerfile
-      args:
-        testarg: uffizzi_test
 
 x-uffizzi:
   ingress:

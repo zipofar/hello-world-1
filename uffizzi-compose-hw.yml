@@ -3,8 +3,8 @@ services:
     build: 
       context: https://github.com/zipofar/hello-world-1
       dockerfile: /Dockerfile
-    environment:
-      TEST1: test15
+      args:
+        testarg: TEST-16
       
 x-uffizzi:
   ingress:

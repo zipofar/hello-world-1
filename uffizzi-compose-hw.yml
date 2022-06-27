@@ -4,7 +4,7 @@ services:
       context: https://github.com/zipofar/hello-world-1
       dockerfile: /Dockerfile
     environment:
-      TEST1: test13
+      TEST1: test14
       
 x-uffizzi:
   ingress:

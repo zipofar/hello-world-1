@@ -1,0 +1,1 @@
+Text from hello-world-1/share_data_2/text_2.txt

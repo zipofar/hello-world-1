@@ -2,7 +2,7 @@ services:
   web:
     image: nginx:latest
     volumes:
-      - ./share_data:/my_web/share_data
+      - ./images:/usr/share/nginx/html/images
 
       
 x-uffizzi:

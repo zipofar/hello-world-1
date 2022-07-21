@@ -3,6 +3,7 @@ services:
     image: nginx:latest
     volumes:
       - ./images:/usr/share/nginx/html/images
+      - ./images/sub-images:/usr/share/nginx/html/big_images
 
       
 x-uffizzi:

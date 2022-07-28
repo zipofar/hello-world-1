@@ -1,0 +1,8 @@
+services:
+  nginx:
+    image: zipofar/my_nginx_simple:latest
+
+x-uffizzi:
+  ingress:
+    service: nginx
+    port: 80

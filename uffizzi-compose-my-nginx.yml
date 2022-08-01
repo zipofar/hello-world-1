@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: zipofar/my_nginx_simple
+    image: zipofar/my_nginx_simple:latest
 
 x-uffizzi:
   ingress:

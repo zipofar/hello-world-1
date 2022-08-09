@@ -5,6 +5,8 @@ services:
       dockerfile: /Dockerfile
       args:
         testarg: TEST-25
+    volumes:
+      - /var/db
       
 x-uffizzi:
   ingress:

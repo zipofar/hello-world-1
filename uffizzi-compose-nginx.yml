@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: nginx:1.23
+    image: nginx
 
 x-uffizzi:
   ingress:

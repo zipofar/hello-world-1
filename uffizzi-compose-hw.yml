@@ -4,7 +4,9 @@ services:
       context: https://github.com/zipofar/hello-world-1#master-2
       dockerfile: /Dockerfile
       args:
-        testarg: TEST-26
+        testarg: TEST-27
+    volumes:
+      - /var/db
       
 x-uffizzi:
   ingress:

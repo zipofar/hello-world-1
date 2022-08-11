@@ -1,0 +1,108 @@
+x-uffizzi:
+  ingress: # required
+    service: falcon
+    port: 3000
+  continuous_previews:
+    deploy_preview_when_pull_request_is_opened: true
+    delete_preview_when_pull_request_is_closed: true
+    delete_preview_after: 8h
+    share_to_github: true
+services:
+  db:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: root
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ['CMD-SHELL', 'ls']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    deploy:
+      resources:
+        limits:
+          memory: 500M
+
+  falcon:
+    build:
+      context: .
+      args:
+        app: falcon
+    deploy:
+      resources:
+        limits:
+          memory: 2000M
+    environment:
+      DB_HOST: db
+      PORT: 3000
+    env_file:
+      - '.env.review'
+    volumes:
+      - .:/app/
+      - nodemodules:/app/node_modules
+    entrypoint: ['npm', 'run', 'start:local:falcon']
+    links:
+      - db
+      - cache
+    depends_on:
+      db:
+        condition: service_healthy
+
+  cache:
+    image: redis:alpine
+    ports:
+      - '6379:6379'
+
+  talon:
+    build:
+      context: .
+      args:
+        app: talon
+    environment:
+      DB_HOST: db
+    env_file:
+      - '.env.review'
+    volumes:
+      - nodemodules:/app/node_modules
+    links:
+      - db
+      - cache
+    depends_on:
+      cuckoo:
+        condition: service_started
+      cache:
+        condition: service_started
+    deploy:
+      resources:
+        limits:
+          memory: 250M
+
+  cuckoo:
+    build:
+      context: .
+      args:
+        app: cuckoo
+    environment:
+      DB_HOST: db
+    env_file:
+      - '.env.review'
+    volumes:
+      - nodemodules:/app/node_modules
+    links:
+      - db
+      - cache
+    depends_on:
+      falcon:
+        condition: service_started
+      cache:
+        condition: service_started
+
+volumes:
+  nodemodules: {}
+  postgres: {}

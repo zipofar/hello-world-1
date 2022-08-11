@@ -1,0 +1,19 @@
+services:
+  nginx:
+    image: zipofar/my_nginx_simple:latest
+    healthcheck:
+      test:
+        - ls
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+x-uffizzi:
+  ingress:
+    service: nginx
+    port: 80
+
+x-uffizzi-continuous-preview:
+  delete_preview_after: 1h
+  delete_preview_when_image_tag_is_updated: true
+  deploy_preview_when_image_tag_is_created: true

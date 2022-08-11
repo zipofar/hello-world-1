@@ -3,6 +3,7 @@ services:
     image: zipofar/my_nginx_simple:latest
     healthcheck:
       test:
+        - CMD-SHELL
         - ls
       interval: 10s
       timeout: 5s

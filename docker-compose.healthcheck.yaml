@@ -3,8 +3,8 @@ services:
     image: zipofar/my_nginx_simple:latest
     healthcheck:
       test:
-        - ls
-      interval: 10s
+        - CMD
+      interval: 10
       timeout: 5s
       start_period: 5s
       retries: 5

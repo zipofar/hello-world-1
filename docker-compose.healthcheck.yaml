@@ -4,10 +4,10 @@ services:
     healthcheck:
       test:
         - CMD
-      interval: 10
+      interval: 10s
       timeout: 5s
       start_period: 5s
-      retries: 5
+      retries: 5d
 
 x-uffizzi:
   ingress:

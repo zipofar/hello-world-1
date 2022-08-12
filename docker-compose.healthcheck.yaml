@@ -7,7 +7,7 @@ services:
       interval: 10s
       timeout: 5s
       start_period: 5s
-      retries: 5d
+      retries: 5
 
 x-uffizzi:
   ingress:

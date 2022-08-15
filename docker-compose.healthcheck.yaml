@@ -8,6 +8,8 @@ services:
       timeout: 5s
       start_period: 5s
       retries: 5
+    volumes:
+      - /var/db
 
 x-uffizzi:
   ingress:

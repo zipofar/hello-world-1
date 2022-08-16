@@ -6,7 +6,7 @@ services:
     image: postgres
     command: ["ls", "ls"]
     healthcheck:
-      test: "/bin/bash ls"
+      test: ["CMD", "/bin/bash", "ls"]
       interval: 10s
       timeout: 5s
       start_period: 5s

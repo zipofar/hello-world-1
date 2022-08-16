@@ -4,7 +4,6 @@ services:
 
   db:
     image: postgres
-    command: ["ls", "ls"]
     healthcheck:
       test: ["CMD", "/bin/bash", "ls"]
       interval: 10s

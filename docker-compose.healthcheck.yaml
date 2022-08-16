@@ -5,13 +5,11 @@ services:
   db:
     image: postgres
     healthcheck:
-      test: ["CMD", "/bin/bash", "ls -las"]
+      test: ["CMD", "/bin/bash", "ls -la"]
       interval: 10s
       timeout: 5s
       start_period: 5s
       retries: 5
-    volumes:
-      - /var/db
 
 x-uffizzi:
   ingress:

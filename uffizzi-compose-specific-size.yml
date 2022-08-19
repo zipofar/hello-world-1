@@ -1,0 +1,11 @@
+services:
+  web:
+    image: nginx:latest 
+    
+  db:
+    image: postgres:13.3 
+      
+x-uffizzi:
+  ingress:
+    service: web
+    port: 80

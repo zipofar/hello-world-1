@@ -1,9 +1,8 @@
 services:
   web:
-    image: nginx:latest 
-    
-  db:
-    image: postgres:13.3 
+    build: 
+      context: https://github.com/zipofar/hello-world-1#compose-test
+      dockerfile: /Dockerfile.specific_size
       
 x-uffizzi:
   ingress:

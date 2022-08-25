@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: postgres
       TEST: test1
     volumes:
-      -db_share:/var/db_share
+      - db_share:/var/db_share
 
   nginx:
     image: nginx

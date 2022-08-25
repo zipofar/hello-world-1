@@ -8,6 +8,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       TEST: test1
+    volumes:
+      -db_share:/var/db_share
 
   nginx:
     image: nginx
@@ -23,6 +25,8 @@ services:
       resources:
         limits:
           memory: 250M
+    volumes:
+      - /var/some_data
 
   vote:
     build:
@@ -40,7 +44,9 @@ configs:
   my_config_2:
     file: ./config2/vote2.conf
 
-
+volumes:
+  db_share:
+  
 continuous_preview:
   deploy_preview_when_pull_request_is_opened: true
   delete_preview_when_pull_request_is_closed: true

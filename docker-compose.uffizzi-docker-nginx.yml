@@ -4,11 +4,11 @@ services:
 
 x-uffizzi-ingress:
   service: webhook
-  port: 80
+  port: 81
 
 x-uffizzi-continuous-preview:
   share_to_github: false
-  delete_preview_after: 94h
+  delete_preview_after: 1h
   tag_pattern: uffizzi_request_*
   delete_preview_when_image_tag_is_updated: false
   deploy_preview_when_image_tag_is_created: false

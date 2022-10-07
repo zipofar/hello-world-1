@@ -11,4 +11,4 @@ x-uffizzi:
     additional_subdomains:
       - "example"
       - "example-2"
-      - "example-3"
+      - "*"

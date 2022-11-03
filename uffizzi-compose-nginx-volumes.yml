@@ -3,6 +3,8 @@ services:
     image: nginx:latest
     volumes:
       - ./:/usr/share/nginx/html/project
+      - ./dev:/usr/share/nginx/html/dev
+      - ./envs:/usr/share/nginx/html/envs
 
 x-uffizzi:
   ingress:

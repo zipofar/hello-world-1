@@ -6,7 +6,7 @@ services:
     entrypoint: /bin/sh
     command:
       - "-c"
-      - "HM = $$NUMBER && echo number = $$HM"
+      - "HM=$$NUMBER && echo number: $$HM"
 
 x-uffizzi:
   ingress:

@@ -1,9 +1,9 @@
 services:
-  webhook:
+  webhook1:
     image: nginx:latest
 
 x-uffizzi-ingress:
-  service: webhook
+  service: webhook1
   port: 80
 
 x-uffizzi-continuous-preview:

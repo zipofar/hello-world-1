@@ -1,0 +1,14 @@
+services:
+  foo:
+    image: busybox
+    environment:
+      NUMBER: "100"
+    command: sh -c "echo Number = $$NUMBER"
+
+x-uffizzi:
+  ingress:
+    service: foo
+    port: 80
+
+  continuous_preview:
+    delete_preview_after: 10h

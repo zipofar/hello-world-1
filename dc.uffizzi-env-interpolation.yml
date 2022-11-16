@@ -3,7 +3,7 @@ services:
     image: busybox
     environment:
       NUMBER: "100"
-    entrypoint: /bin/sh -c
+    entrypoint: /bin/sh
     command:
       - "echo Number = $$NUMBER"
 

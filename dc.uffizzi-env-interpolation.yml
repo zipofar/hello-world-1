@@ -3,8 +3,10 @@ services:
     image: busybox
     environment:
       NUMBER: "100"
+    entrypoint: /bin/sh
     command:
-      - "echo number = $$NUMBER"
+      - "-c"
+      - "HM = $$NUMBER && echo number = $$HM"
 
 x-uffizzi:
   ingress:

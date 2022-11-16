@@ -6,7 +6,7 @@ services:
     entrypoint: /bin/sh
     command:
       - "-c"
-      - "HM=$$NUMBER && echo number: $$HM"
+      - "ENDPOINT=$$UFFIZZI_URL && echo end point: $$ENDPOINT"
 
 x-uffizzi:
   ingress:

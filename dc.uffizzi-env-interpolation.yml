@@ -5,6 +5,7 @@ services:
       NUMBER: "100"
     entrypoint: /bin/sh
     command:
+      - "c"
       - "echo Number = $$NUMBER"
 
 x-uffizzi:

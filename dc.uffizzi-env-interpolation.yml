@@ -4,7 +4,6 @@ services:
     environment:
       NUMBER: "100"
     command:
-      - "sh -c"
       - "echo Number = $$NUMBER"
 
 x-uffizzi:

@@ -3,7 +3,7 @@ services:
     image: busybox
     environment:
       NUMBER: "100"
-    command: ["sh", "-c", "echo", "HMM"]
+    command: ["ls"]
 
 x-uffizzi:
   ingress:

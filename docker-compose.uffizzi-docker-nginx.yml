@@ -1,6 +1,8 @@
 services:
   webhook:
     image: nginx:latest
+    command:
+      - "abra"
 
 x-uffizzi-ingress:
   service: webhook

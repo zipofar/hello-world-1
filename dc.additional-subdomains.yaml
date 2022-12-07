@@ -9,7 +9,7 @@ x-uffizzi:
     service: nginx
     port: 80
     additional_subdomains:
-      - "example"
+      - "example-1"
       - "example-2"
       
 x-uffizzi-continuous-preview:

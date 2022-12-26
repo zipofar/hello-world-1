@@ -1,10 +1,10 @@
 services:
   webhooks_test_app:
     #image: ttl.sh/c18c6432-80d4-45ce-8689-cee8a99f2a37-04:2h
-    #image: ghcr.io/hm
+    image: ghcr.io/hm
     #image: unknown_nginx
     #image: uffizzitest/test-private-repo
-    image: elnealo.jfrog.io/uffizzi-test-docker/webhook-test-app
+    #image: elnealo.jfrog.io/uffizzi-test-docker/webhook-test-app
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres

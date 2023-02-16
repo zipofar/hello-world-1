@@ -2,7 +2,7 @@ services:
   nginx:
     image: nginx:latest
     volumes:
-      - ./.dot_nginx:/usr/share/nginx/html/dot-nginx
+      - ./.dot_nginx:/usr/share/nginx/html/dot-nginx-1
 
 x-uffizzi:
   ingress:

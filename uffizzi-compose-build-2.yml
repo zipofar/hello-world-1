@@ -1,0 +1,23 @@
+services:
+  hello-world:
+    build:
+      context: .
+
+  redis:
+    image: redis
+
+  # db:
+  #   image: postgres
+  #   environment:
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DB: airflow
+
+x-uffizzi:
+  ingress:
+    service: hello-world
+    port: 80
+  continuous_preview:
+    deploy_preview_when_pull_request_is_opened: true
+    delete_preview_when_pull_request_is_closed: true
+    share_to_github: true

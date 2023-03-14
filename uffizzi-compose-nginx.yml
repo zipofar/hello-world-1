@@ -2,6 +2,9 @@ services:
   nginx:
     image: nginx:latest
 
+  redis:
+    image: redis:latest
+
 x-uffizzi:
   ingress:
     service: nginx

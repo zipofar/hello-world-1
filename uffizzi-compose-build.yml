@@ -2,7 +2,6 @@ services:
   hello-world:
     build:
       context: https://github.com/zipofar/hello-world-1#compose-test
-      dockerfile: ./docker_file/Dockerfile
 
 x-uffizzi:
   ingress:

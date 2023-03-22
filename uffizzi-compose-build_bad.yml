@@ -1,0 +1,13 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/zipofar/hello-world-1#compose-test
+      dockerfile: Dockerfile_bad
+
+  redis:
+    image: redis
+
+x-uffizzi:
+  ingress:
+    service: hello-world
+    port: 80

@@ -1,0 +1,12 @@
+services:
+  nginx:
+    image: nginx:latest
+    command:
+      - sh
+      - -c
+      - ls -la
+
+x-uffizzi:
+  ingress:
+    service: nginx
+    port: 80

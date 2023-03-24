@@ -1,5 +1,5 @@
 services:
-  bad_redis:
+  bad-redis:
     build:
       context: https://github.com/zipofar/hello-world-1#compose-test
       dockerfile: Dockerfile_bad_redis

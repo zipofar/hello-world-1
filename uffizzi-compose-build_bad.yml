@@ -5,7 +5,12 @@ services:
       dockerfile: Dockerfile_bad_redis
 
   app:
-    image: nginx
+    build:
+      context: https://github.com/zipofar/hello-world-1#compose-test
+      dockerfile: Dockerfile
+
+  # app:
+  #   image: nginx
 
 x-uffizzi:
   ingress:

@@ -8,7 +8,7 @@ x-uffizzi:
   ingress:
     service: hello-world
     port: 80
-    
+
 x-uffizzi-continuous-preview:
   share_to_github: true
   delete_preview_after: 1h

@@ -1,7 +1,7 @@
 services:
-  hello-world:
+  app:
     build:
-      context: https://github.com/7R41N33/hello-world:master
+      context: https://github.com/zipofar/hello-world-1#compose-test
     environment:
       MULTILINE_KEY: |
         -----BEGIN RSA PRIVATE KEY-----
@@ -19,7 +19,15 @@ services:
       SIDEKIQ_PASSWORD: ''
       RUBYOPT: -W:no-deprecated -W:no-experimental
       CDN_HOST: https://cdn.cloud?k=1
+    secrets:
+      - mysecret
 
-ingress:
-  service: hello-world
-  port: 80
+secrets:
+  mysecret:
+    external: true
+    name: POSTGRES_PASSWORD
+
+x-uffizzi:
+  ingress:
+    service: app
+    port: 80

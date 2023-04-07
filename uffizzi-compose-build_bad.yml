@@ -7,11 +7,14 @@ services:
   app:
     build:
       context: https://github.com/zipofar/hello-world-1#compose-test
-      # dockerfile: Dockerfile
       dockerfile: Dockerfile_bad_redis
+    configs:
+      - source: my_config
+        target: /etc/nginx/conf.d/default.conf
 
-  # app:
-  #   image: nginx
+configs:
+  my_config:
+    file: ./configs/vote.conf
 
 x-uffizzi:
   ingress:

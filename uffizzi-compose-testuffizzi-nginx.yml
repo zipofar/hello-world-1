@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: uffizzitest/webhooks-test-app:latest
+    image: dbpterraform2/test-node-zipofar:latest
 
 x-uffizzi:
   ingress:

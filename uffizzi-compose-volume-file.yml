@@ -1,0 +1,10 @@
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./images/logo.svg:/usr/share/nginx/html/images
+
+x-uffizzi:
+  ingress:
+    service: nginx
+    port: 80

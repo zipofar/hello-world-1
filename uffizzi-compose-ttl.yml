@@ -1,6 +1,6 @@
 services:
   super:
-    image: ttl.sh/c18c6432-80d4-45ce-8689-cee8a99f2a37-03:h2
+    image: ttl.sh/test-node-zipofar:3m
 
 x-uffizzi:
   ingress:
